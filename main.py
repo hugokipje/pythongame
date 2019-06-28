@@ -45,3 +45,25 @@ def main ():
   time.sleep(1)
   print("Je hebt 5 levens!")
   print("het woord heeft " + str(lengtewoord) + " letters")
+
+#als je het woord hebt geraden
+  while True:
+    user = (input(": "))
+   
+  
+    match = re.search(user, woord)
+    if user == woord:
+      print("Gefeliciteerd " + name + ', je heb het woord ' + '"' + woord + '"' + " geraden!")
+      restart = input("Wil je nog een keer spelen? Antwoord alleen met ja of nee alsjeblieft.")
+      if restart == "ja" or restart == "Ja" or restart == "JA":
+        main()
+      else:
+        quit("Jammer.")
+    
+ #als je een letter goed hebt geraden
+    elif match:
+      print("Goed geraden " + name + "!" " Als je het woord nu weet, type het woord dan in zijn geheel.")
+      for i in range(0, lengtewoord):
+       if user == woord[i]:
+        temp = temp[:i] + user +temp[i+1:]
+      print(temp)
