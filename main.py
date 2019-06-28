@@ -122,3 +122,9 @@ def main ():
         break
       else:
        pass
+
+restart = input("Wil je nog een keer spelen? Antwoord alleen met ja of nee alsjeblieft.")
+  if restart == "ja" or restart == "Ja" or restart == "JA":
+     main() 
+  else:
+     quit("Jammer.") 
