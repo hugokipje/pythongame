@@ -67,3 +67,52 @@ def main ():
        if user == woord[i]:
         temp = temp[:i] + user +temp[i+1:]
       print(temp)
+
+  #als je een letter fout hebt geraden met plaatje van galgje   
+    else:
+      print("Jammer " + name + ", dat is niet goed.")
+      counter = counter + 1
+      if counter == 1:
+        print("""  
+      |
+      |
+      |
+      |
+      |
+  _____|""")
+      elif counter == 2:
+             print("""  ____
+      |
+       |
+       |
+       |
+       |
+  _____|""")
+
+      elif counter == 3:
+        print("""  ____
+    | \|
+    0  |
+    |  |
+       |
+       |
+  _____|""")
+
+      elif counter == 4:
+        print("""  ____
+    | \|
+    0  |
+   /|\ |
+       |
+       |
+  _____|""")
+
+      elif counter ==5:
+      
+        print("""  ____
+    | \|
+    0  |
+   -|- |
+   / \ |
+       |
+  _____|""")
