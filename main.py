@@ -116,3 +116,9 @@ def main ():
    / \ |
        |
   _____|""")
+        print("Helaas, je bent dood :(")
+     #je bent dood en laten zien wat het woord was
+        print('Het woord was ' + '"' + woord + '"')
+        break
+      else:
+       pass
